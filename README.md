@@ -5,9 +5,10 @@ using a streamlit to create a simple stock dashboard
 # Env:
 #### requestments:
 * python 3.8.5
-* pandas
-* streamlit
-* plotly
+* pandas 0.25.3
+* streamlit 0.72.0
+* plotly 4.8.1
+
 
 # Usage
 <pre><code>
