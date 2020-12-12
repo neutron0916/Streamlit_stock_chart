@@ -29,6 +29,9 @@ sub_info = st.sidebar.selectbox('Sub_info', data_colums)
 # ----------------------------------- body ----------------------------------- #
 st.image('./icon.png')
 st.title('Stock chart')
+
+# ----------------------------------- plot ----------------------------------- #
+
 if stock_code and month:
     data = get_stock_data(stock_code, month)
     st.dataframe(data)
@@ -78,4 +81,4 @@ if stock_code and month:
 
     st.plotly_chart(fig)
 
-# ----------------------------------- plot ----------------------------------- #
+
