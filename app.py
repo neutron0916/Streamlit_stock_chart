@@ -5,7 +5,7 @@ from datetime import datetime
 from plotly.subplots import make_subplots
 
 #利用st.cache()快取沒有改變過的data
-@st.cache()
+@st.cache_data
 # 爬蟲程式
 def get_stock_data(stock_code, month):
     return stock(stock_code, month).get_all_data()
